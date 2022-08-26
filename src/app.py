@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('/workspace/Flask-Project-Tutorial/models/titanic_model.pkl', 'rb'))
+model = pickle.load(open('/workspace/Flask-Project-Tutorial/models/titanic_model_dtc.pkl', 'rb'))
 
 @app.route('/') #http://www.google.com/
 def home():
